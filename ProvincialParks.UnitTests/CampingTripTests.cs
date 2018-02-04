@@ -38,9 +38,9 @@ namespace ProvincialParks.UnitTests
 
             //assert
             Assert.AreEqual(campingTrip.NumberOfPeople, 3);
-            Assert.AreEqual(campingTrip.GetAmountOwedPerPerson(1), 9.17m);
-            Assert.AreEqual(campingTrip.GetAmountOwedPerPerson(2), 1.6m);
-            Assert.AreEqual(campingTrip.GetAmountOwedPerPerson(3), -10.77m);
+            Assert.AreEqual(campingTrip.GetAmountOwedPerPerson(1), -9.18m);
+            Assert.AreEqual(campingTrip.GetAmountOwedPerPerson(2), -1.6m);
+            Assert.AreEqual(campingTrip.GetAmountOwedPerPerson(3), 10.77m);
         }
     }
 }
