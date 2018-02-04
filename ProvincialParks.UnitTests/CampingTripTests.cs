@@ -11,14 +11,14 @@ namespace ProvincialParks.UnitTests
         {
             //act
             var campingTrip = new CampingTrip(2);
-            campingTrip.Expenses.Add(new Expense(1, 0.50m));
-            campingTrip.Expenses.Add(new Expense(1, 0.5m));
-            campingTrip.Expenses.Add(new Expense(2, 1.50m));
-            campingTrip.Expenses.Add(new Expense(2, 99m));
+            campingTrip.Expenses.Add(new Expense(1, 1.04m));
+            campingTrip.Expenses.Add(new Expense(1, 5m));
+            campingTrip.Expenses.Add(new Expense(2, 3m));
+            campingTrip.Expenses.Add(new Expense(2, 132m));
 
             //assert
             Assert.AreEqual(campingTrip.NumberOfPeople, 2);
-            Assert.AreEqual(campingTrip.TotalExpenses, 101.5m);
+            Assert.AreEqual(campingTrip.TotalExpenses, 141.04m);
         }
 
         [TestMethod]
@@ -26,21 +26,21 @@ namespace ProvincialParks.UnitTests
         {
             //act
             var campingTrip = new CampingTrip(3);
-            campingTrip.Expenses.Add(new Expense(1, 10m));
             campingTrip.Expenses.Add(new Expense(1, 20m));
-            campingTrip.Expenses.Add(new Expense(2, 15m));
-            campingTrip.Expenses.Add(new Expense(2, 15.01m));
-            campingTrip.Expenses.Add(new Expense(2, 3m));
-            campingTrip.Expenses.Add(new Expense(2, 3.01m));
-            campingTrip.Expenses.Add(new Expense(3, 5m));
+            campingTrip.Expenses.Add(new Expense(1, 20m));
+            campingTrip.Expenses.Add(new Expense(2, 5m));
+            campingTrip.Expenses.Add(new Expense(2, 18.81m));
+            campingTrip.Expenses.Add(new Expense(2, 6m));
+            campingTrip.Expenses.Add(new Expense(2, 2.61m));
             campingTrip.Expenses.Add(new Expense(3, 9m));
-            campingTrip.Expenses.Add(new Expense(3, 4m));
+            campingTrip.Expenses.Add(new Expense(3, 7m));
+            campingTrip.Expenses.Add(new Expense(3, 4.05m));
 
             //assert
             Assert.AreEqual(campingTrip.NumberOfPeople, 3);
-            Assert.AreEqual(campingTrip.GetAmountOwedPerPerson(1), -1.99m);
-            Assert.AreEqual(campingTrip.GetAmountOwedPerPerson(2), -8.01m);
-            Assert.AreEqual(campingTrip.GetAmountOwedPerPerson(3), 10.01m);
+            Assert.AreEqual(campingTrip.GetAmountOwedPerPerson(1), 9.17m);
+            Assert.AreEqual(campingTrip.GetAmountOwedPerPerson(2), 1.6m);
+            Assert.AreEqual(campingTrip.GetAmountOwedPerPerson(3), -10.77m);
         }
     }
 }
