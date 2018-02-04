@@ -5,7 +5,7 @@ using System.IO;
 namespace ProvincialParks.CampingApp.Infrastructure
 {
     
-    public class TextFileWriter //writes expenses to a output file
+    public class TextFileWriter //writes expenses to an output file
     {
         private string FileName { get; set; }
 
