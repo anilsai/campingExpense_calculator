@@ -6,7 +6,7 @@ using System.IO;
 namespace ProvincialParks.CampingApp.Infrastructure
 {
     
-    public class TextFileReader //reads Camping trip expenses from a file.
+    public class TextFileReader //reads Camping trip's expenses from a file.
     {
         public List<CampingTrip> allTrips {get; private set;}
         private int rowNumber = 0;
