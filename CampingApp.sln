@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProvincialParks.CampingApp", "ProvincialParks.CampingApp\ProvincialParks.CampingApp.csproj", "{B003B177-14DE-4E87-BA00-A47B750A9BE2}"
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CampingApp", "ProvincialParks.CampingApp\CampingApp.csproj", "{B003B177-14DE-4E87-BA00-A47B750A9BE2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProvincialParks.UnitTests", "ProvincialParks.UnitTests\ProvincialParks.UnitTests.csproj", "{F1430E79-A5E7-471C-9C23-E34B09E3AC5D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CampingApp.UnitTests", "ProvincialParks.UnitTests\CampingApp.UnitTests.csproj", "{F1430E79-A5E7-471C-9C23-E34B09E3AC5D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -22,5 +24,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9C0F7698-C182-4ED9-B531-D2723A198AE6}
 	EndGlobalSection
 EndGlobal

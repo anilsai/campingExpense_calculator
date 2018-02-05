@@ -63,9 +63,9 @@
     <Compile Include="CampingTripTests.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ProvincialParks.CampingApp\ProvincialParks.CampingApp.csproj">
+    <ProjectReference Include="..\ProvincialParks.CampingApp\CampingApp.csproj">
       <Project>{b003b177-14de-4e87-ba00-a47b750a9be2}</Project>
-      <Name>ProvincialParks.CampingApp</Name>
+      <Name>CampingApp</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
